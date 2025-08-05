@@ -281,7 +281,7 @@ class LoginController {
             session_start();
         }
 
-        $emailDelUsuario = $_SESSION['email'];
+        $emailDelUsuario = $_SESSION['email'] ?? 'tu email';
 
         
 
