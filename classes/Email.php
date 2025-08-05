@@ -39,7 +39,7 @@ class Email {
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . htmlspecialchars($this->nombre) . "</strong>, has creado tu cuenta en AppSalon, solo debes confirmarla presionando el siguiente enlace!</p>";
-       $contenido .= "<p>Presiona aquí: <a href='" .  $_ENV['PROJECT_URL'] . "/recuperar?token=" . urlencode($this->token) . "'>Confirmar Cuenta</a></p>";
+       $contenido .= "<p>Presiona aquí: <a href='" .  $_ENV['PROJECT_URL'] . "/confirmar?token=" . urlencode($this->token) . "'>Confirmar Cuenta</a></p>";
         $contenido .= "</html>";
 
         $mail->Body = $contenido;
